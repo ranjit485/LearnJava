@@ -15,13 +15,13 @@ public class login {
         // driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS) ;
 
         // URL of the login website
-        driver.get("C:\\JavaCodes\\LearnJava\\src\\LearnTryCatch\\BruteForce\\DemoLogin.html");
+//        driver.get("C:\\JavaCodes\\LearnJava\\src\\LearnTryCatch\\BruteForce\\DemoLogin.html");
+        driver.get("https://www.instagram.com/?hl=en");
 
         // Maximize window size of browser
         driver.manage().window().maximize();
 
         driver.findElement(By.xpath("//input[@id = 'Name']")).sendKeys("ranjit");
-
 
         String[] Messages = new String[10];
         Messages[0] = "one";

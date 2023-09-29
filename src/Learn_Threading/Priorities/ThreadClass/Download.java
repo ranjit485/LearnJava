@@ -16,15 +16,7 @@ public class Download extends Thread{
                     st = 0;       //st=st-10;
                     System.out.println(BB_WC+threadId()+" "+getName() + " " + st + "% DOWNLOAD STARTED"+RESET);
                 }
-                case 1 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st+ D+RESET);
-                case 2 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st + D+RESET);
-                case 3 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st + D+RESET);
-                case 4 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st + D+RESET);
-                case 5 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st + D+RESET);
-                case 6 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st + D+RESET);
-                case 7 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st + D+RESET);
-                case 8 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st + D+RESET);
-                case 9 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st + D+RESET);
+                case 1, 9, 2, 3, 4, 5, 6, 7, 8 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st+ D+RESET);
                 case 10 -> System.out.println(BB_WC+threadId()+" "+getName() + " " + st + "% COMPLETED "+RESET);
             }
         }
