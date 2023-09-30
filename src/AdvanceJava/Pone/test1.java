@@ -6,9 +6,6 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
 public class test1 extends JFrame {
-    private JPanel childPanel1 = new JPanel();
-    private JPanel childPanel2 = new JPanel();
-    private JPanel childPanel3 = new JPanel();
 
     public test1() {
 
@@ -19,10 +16,9 @@ public class test1 extends JFrame {
         Screen.setSize(350,300);
 //        Screen.setBorder(BorderFactory.createEmptyBorder(4,4,4,4));
 
-
         // this is button box
         JPanel Navbar = new JPanel();
-        Navbar.setBackground(Color.DARK_GRAY);
+        Navbar.setBackground(Color.gray);
 
         Navbar.setBorder(new EmptyBorder(0, 10, 0, 10));
         Navbar.setPreferredSize(new Dimension(200,50));
@@ -33,33 +29,37 @@ public class test1 extends JFrame {
         JButton exa = new JButton("EXAM");
 
 
-
         Navbar.add(semBtn1);
         Navbar.add(semBtn2);
         Navbar.add(semBtn3);
         Navbar.add(semBtn4);
 
-        childPanel1.setBackground(Color.red);
-        childPanel1.setPreferredSize(new Dimension(300, 40));
 
-        childPanel3.setBackground(Color.yellow);
-        childPanel3.setPreferredSize(new Dimension(300, 40));
+        //  Child box
+
+        JPanel childBox = new JPanel();
+        childBox.setBackground(Color.DARK_GRAY);
+        childBox.setPreferredSize(new Dimension(300, 40));
 
 
-        childPanel2.setPreferredSize(new Dimension(300, 40));
-        childPanel2.setBackground(Color.blue);
+//        childPanel3.setBackground(Color.yellow);
+//        childPanel3.setPreferredSize(new Dimension(300, 40));
+
+//
+//        childPanel2.setPreferredSize(new Dimension(300, 40));
+//        childPanel2.setBackground(Color.blue);
 
 
         semBtn2.addActionListener(e -> {
-            childPanel1.add(exa);
+//            childPanel1.add(exa);
             System.out.println("added");
         });
 
 
 
         Screen.add(Navbar);
-        Screen.add(childPanel1);
-        Screen.add(childPanel3);
+        Screen.add(childBox);
+//        Screen.add(childPanel3);
 
         pack();
         Screen.setVisible(true);
