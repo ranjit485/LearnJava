@@ -11,11 +11,12 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../selenium/selenium-server-4.9.0.jar!/" />
+          <root url="jar://$USER_HOME$/selenium/selenium-server-4.9.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="ColoredConsole" level="project" />
   </component>
 </module>

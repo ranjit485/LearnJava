@@ -7,12 +7,9 @@ public class App extends JFrame {
     JButton BtnSem3, BtnSem4, BtnSem5, BtnSem6;
     JPanel Main;
     JPanel Navigation, NavChild, BuyMe;
-    private JButton button1;
-    private JButton button2;
-    private JButton button3;
-    private JButton button4;
     private JButton buyMeATeaButton;
     private JTabbedPane tabbedPane1;
+    private JButton button1;
     private JButton sem5;
     private JButton btn3;
     private JButton sem6;
